@@ -21,7 +21,7 @@
     left: 0;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.8); 
-    backdrop-filter: blur(10px); 
+    backdrop-filter: blur(15px); 
     z-index: 100; 
 
     display: flex;
@@ -43,6 +43,11 @@
 
 }
 
+.btn-header{
+    height: 48px;
+    width: 129px;
+}
+
 .header-container {
     display: flex;
     flex-direction: row;
@@ -61,18 +66,106 @@
 
 }
 
-a {
+.action {
     margin-left: 24px;
     margin-right: 24px;
     cursor: pointer;
+    transition: .4s ease;
 }
 
-a:hover {
+.action:hover {
     transform: scale3d(1.04, 1.04, 1.04);
-    transition: .2s ease;
+    transition: .4s ease;
     color: var(--dark-grey);
 }
 
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 64px;
+}
+
+.panel1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 140px;
+}
+
+.panel1-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 1088px;
+
+}
+.h1-text{
+    margin-bottom: 12px ;
+}
+
+.subtitle-text{
+    max-width: 600px;
+    margin-bottom: 40px ;
+}
+
+
+.video-container{
+    max-height: 540px;
+    max-width: 960px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+ img {
+    max-width: 960px ;
+    max-height: 540px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .4s ease-in-out;
+    border-radius: 30px;
+
+}
+
+img:hover {
+    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.2);
+    transform: scale3d(1.02, 1.02, 1.02);
+    transition: .4s ease-in-out;
+
+}
+
+
+.panel2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 140px;
+
+}
+
+.panel2-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 500px;
+    margin-bottom: 48px
+  }
+
+  .btn-content {
+    width: 168px;
+    height: 50px;
+}
 
 
 
